@@ -5,7 +5,7 @@ public class Main {
 	public Main() {
 		Scanner sc = new Scanner(System.in);
 		String vehicleType,name,color;
-		int wheels = 0,fuelCapacity, maxSpeed,rating=0;
+		int wheels = 2,fuelCapacity, maxSpeed,rating=0;
 		
 		System.out.print("Car or Motorcycle  : ");
 		vehicleType = sc.nextLine();
@@ -35,7 +35,6 @@ public class Main {
 			car.printDetail();
 			break;
 		case "Motorcycle" :
-			wheels = 2;
 			MotorCycle motorcycle= new MotorCycle(name, color, wheels, fuelCapacity, maxSpeed);
 			motorcycle.printDetail();
 			break;
